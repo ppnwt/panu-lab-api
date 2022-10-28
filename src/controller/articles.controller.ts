@@ -17,7 +17,7 @@ export class ArticlesController {
   @HttpCode(200)
   findAll(@Res() res: Response) {
     // eslint-disable-next-line prettier/prettier
-    res.status(HttpStatus.OK).json([
+    res.status(HttpStatus.OK).json(
       {
         blogsAll: [
             {
@@ -205,6 +205,6 @@ export class ArticlesController {
           }
         ],
       },
-    ]);
+    );
   }
 }
